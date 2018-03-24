@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MirroDemo.xcodeproj">
+      location = "self:/Users/dongl/Desktop/MirroDemo/EquatableProperty.xcodeproj">
    </FileRef>
 </Workspace>

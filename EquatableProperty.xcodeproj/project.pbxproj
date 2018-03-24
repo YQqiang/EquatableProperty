@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F3A94B5206359F000518740 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A94B4206359F000518740 /* main.swift */; };
+		2FCC777C2066452100935699 /* EquatableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC777B2066452100935699 /* EquatableProperty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2F3A94B1206359F000518740 /* MirroDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MirroDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F3A94B1206359F000518740 /* EquatableProperty */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EquatableProperty; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3A94B4206359F000518740 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2FCC777B2066452100935699 /* EquatableProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableProperty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +43,7 @@
 		2F3A94A8206359F000518740 = {
 			isa = PBXGroup;
 			children = (
-				2F3A94B3206359F000518740 /* MirroDemo */,
+				2F3A94B3206359F000518740 /* EquatableProperty */,
 				2F3A94B2206359F000518740 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +51,26 @@
 		2F3A94B2206359F000518740 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F3A94B1206359F000518740 /* MirroDemo */,
+				2F3A94B1206359F000518740 /* EquatableProperty */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2F3A94B3206359F000518740 /* MirroDemo */ = {
+		2F3A94B3206359F000518740 /* EquatableProperty */ = {
 			isa = PBXGroup;
 			children = (
 				2F3A94B4206359F000518740 /* main.swift */,
+				2FCC777B2066452100935699 /* EquatableProperty.swift */,
 			);
-			path = MirroDemo;
+			path = EquatableProperty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F3A94B0206359F000518740 /* MirroDemo */ = {
+		2F3A94B0206359F000518740 /* EquatableProperty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F3A94B8206359F000518740 /* Build configuration list for PBXNativeTarget "MirroDemo" */;
+			buildConfigurationList = 2F3A94B8206359F000518740 /* Build configuration list for PBXNativeTarget "EquatableProperty" */;
 			buildPhases = (
 				2F3A94AD206359F000518740 /* Sources */,
 				2F3A94AE206359F000518740 /* Frameworks */,
@@ -77,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = MirroDemo;
+			name = EquatableProperty;
 			productName = MirroDemo;
-			productReference = 2F3A94B1206359F000518740 /* MirroDemo */;
+			productReference = 2F3A94B1206359F000518740 /* EquatableProperty */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2F3A94AC206359F000518740 /* Build configuration list for PBXProject "MirroDemo" */;
+			buildConfigurationList = 2F3A94AC206359F000518740 /* Build configuration list for PBXProject "EquatableProperty" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F3A94B0206359F000518740 /* MirroDemo */,
+				2F3A94B0206359F000518740 /* EquatableProperty */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3A94B5206359F000518740 /* main.swift in Sources */,
+				2FCC777C2066452100935699 /* EquatableProperty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +258,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F3A94AC206359F000518740 /* Build configuration list for PBXProject "MirroDemo" */ = {
+		2F3A94AC206359F000518740 /* Build configuration list for PBXProject "EquatableProperty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F3A94B6206359F000518740 /* Debug */,
@@ -263,7 +267,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F3A94B8206359F000518740 /* Build configuration list for PBXNativeTarget "MirroDemo" */ = {
+		2F3A94B8206359F000518740 /* Build configuration list for PBXNativeTarget "EquatableProperty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F3A94B9206359F000518740 /* Debug */,
