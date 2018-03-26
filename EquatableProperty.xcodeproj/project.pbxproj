@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F3A94B5206359F000518740 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A94B4206359F000518740 /* main.swift */; };
+		2F8922682068BFAF001DC582 /* EquatablePropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8922672068BFAF001DC582 /* EquatablePropertyTests.swift */; };
+		2F89226F2068C003001DC582 /* EquatableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC777B2066452100935699 /* EquatableProperty.swift */; };
 		2FCC777C2066452100935699 /* EquatableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC777B2066452100935699 /* EquatableProperty.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,11 +28,21 @@
 /* Begin PBXFileReference section */
 		2F3A94B1206359F000518740 /* EquatableProperty */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EquatableProperty; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3A94B4206359F000518740 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2F8922652068BFAF001DC582 /* EquatablePropertyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EquatablePropertyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8922672068BFAF001DC582 /* EquatablePropertyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatablePropertyTests.swift; sourceTree = "<group>"; };
+		2F8922692068BFAF001DC582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FCC777B2066452100935699 /* EquatableProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableProperty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2F3A94AE206359F000518740 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F8922622068BFAF001DC582 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				2F3A94B3206359F000518740 /* EquatableProperty */,
+				2F8922662068BFAF001DC582 /* EquatablePropertyTests */,
 				2F3A94B2206359F000518740 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				2F3A94B1206359F000518740 /* EquatableProperty */,
+				2F8922652068BFAF001DC582 /* EquatablePropertyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +77,15 @@
 				2FCC777B2066452100935699 /* EquatableProperty.swift */,
 			);
 			path = EquatableProperty;
+			sourceTree = "<group>";
+		};
+		2F8922662068BFAF001DC582 /* EquatablePropertyTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F8922672068BFAF001DC582 /* EquatablePropertyTests.swift */,
+				2F8922692068BFAF001DC582 /* Info.plist */,
+			);
+			path = EquatablePropertyTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +108,23 @@
 			productReference = 2F3A94B1206359F000518740 /* EquatableProperty */;
 			productType = "com.apple.product-type.tool";
 		};
+		2F8922642068BFAF001DC582 /* EquatablePropertyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F89226C2068BFAF001DC582 /* Build configuration list for PBXNativeTarget "EquatablePropertyTests" */;
+			buildPhases = (
+				2F8922612068BFAF001DC582 /* Sources */,
+				2F8922622068BFAF001DC582 /* Frameworks */,
+				2F8922632068BFAF001DC582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EquatablePropertyTests;
+			productName = EquatablePropertyTests;
+			productReference = 2F8922652068BFAF001DC582 /* EquatablePropertyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +136,10 @@
 				ORGANIZATIONNAME = sungrow;
 				TargetAttributes = {
 					2F3A94B0206359F000518740 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2F8922642068BFAF001DC582 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,9 +158,20 @@
 			projectRoot = "";
 			targets = (
 				2F3A94B0206359F000518740 /* EquatableProperty */,
+				2F8922642068BFAF001DC582 /* EquatablePropertyTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F8922632068BFAF001DC582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F3A94AD206359F000518740 /* Sources */ = {
@@ -125,6 +180,15 @@
 			files = (
 				2F3A94B5206359F000518740 /* main.swift in Sources */,
 				2FCC777C2066452100935699 /* EquatableProperty.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F8922612068BFAF001DC582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8922682068BFAF001DC582 /* EquatablePropertyTests.swift in Sources */,
+				2F89226F2068C003001DC582 /* EquatableProperty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +319,32 @@
 			};
 			name = Release;
 		};
+		2F89226A2068BFAF001DC582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EquatablePropertyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.EquatablePropertyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2F89226B2068BFAF001DC582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EquatablePropertyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.EquatablePropertyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -272,6 +362,15 @@
 			buildConfigurations = (
 				2F3A94B9206359F000518740 /* Debug */,
 				2F3A94BA206359F000518740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F89226C2068BFAF001DC582 /* Build configuration list for PBXNativeTarget "EquatablePropertyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F89226A2068BFAF001DC582 /* Debug */,
+				2F89226B2068BFAF001DC582 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

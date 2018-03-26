@@ -18,11 +18,8 @@ protocol EquatableProperty: EquatableAny {
 }
 
 extension EquatableProperty {
-    static func =*=<T: EquatableProperty>(_ a: T, b: Self) -> Bool {
-        guard type(of: a) == type(of: b) else {
-            return false
-        }
-        return equalProperty(a, b: b as! T)
+    static func =*=(_ a: Self, b: Self) -> Bool {
+        return equalProperty(a, b: b)
     }
 }
 
