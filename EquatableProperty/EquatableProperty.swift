@@ -40,7 +40,13 @@ extension EquatableProperty {
                             result = equalProperty(aValue, b: bValue)
                         }
                     }
-                    result = result && equalProperty(aValue, b: bValue)
+                    
+                    let avalueMirrorType = Mirror(reflecting: aValue).displayStyle
+                    let bvalueMirrorType = Mirror(reflecting: aValue).displayStyle
+                    if avalueMirrorType == .optional, bvalueMirrorType == .optional {
+                        result = result && equalProperty(aValue, b: bValue)
+                    }
+                    
                     if let res = equalAny(aValue: aValue, bValue: bValue) {
                         result = result && res
                     }

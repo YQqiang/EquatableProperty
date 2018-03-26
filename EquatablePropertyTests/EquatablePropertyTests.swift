@@ -105,16 +105,74 @@ class EquatablePropertyTests: XCTestCase {
         XCTAssert(strClass1 =*= strClass2, "子类相等比较")
     }
     
+    func testEqualArray1() {
+        let strClass1 = SuperClassStr()
+        let strClass2 = SuperClassStr()
+        strClass1.propertyArr = [true, false, false]
+        strClass2.propertyArr = [true, false, false]
+        XCTAssert(strClass1 =*= strClass2, "数组属性相等比较")
+    }
+    
+    func testEqualArray2() {
+        let strClass1 = SuperClassStr()
+        let strClass2 = SuperClassStr()
+        strClass1.propertyArr = [true, false]
+        strClass2.propertyArr = [true, true]
+        XCTAssert(!(strClass1 =*= strClass2), "数组属性不相等比较")
+    }
+    
+    func testEqualArray3() {
+        let strClass1 = SuperClassStr()
+        let strClass2 = SuperClassStr()
+        strClass1.propertyArrStr = ["1", "2", "3"]
+        strClass2.propertyArrStr = ["1", "2"]
+        XCTAssert(!(strClass1 =*= strClass2), "数组[String]属性不相等比较")
+    }
+    
+    func testEqualArray4() {
+        let strClass1 = SuperClassStr()
+        let strClass2 = SuperClassStr()
+        strClass1.propertyArrStr = ["1", "2"]
+        strClass2.propertyArrStr = ["1", "2"]
+        XCTAssert(strClass1 =*= strClass2, "数组[String]属性相等比较")
+    }
+    
+    func testEqualArray5() {
+        let strClass1 = SuperClassStr()
+        let strClass2 = SuperClassStr()
+        strClass2.propertyArrStr = ["1", "2"]
+        XCTAssert(!(strClass1 =*= strClass2), "数组[String]属性不相等比较")
+    }
+    
+    func testEqualArray6() {
+        let strClass1 = SuperClassStr()
+        let strClass2 = SuperClassStr()
+        strClass1.propertyArrFloat = [1.2, 3.9]
+        strClass2.propertyArrFloat = [1.2, 3.899]
+        XCTAssert(!(strClass1 =*= strClass2), "数组[Float]属性不相等比较")
+    }
+    
+    func testEqualArray7() {
+        let strClass1 = SuperClassStr()
+        let strClass2 = SuperClassStr()
+        strClass1.propertyArrFloat = [1.2, 3.899]
+        strClass2.propertyArrFloat = [1.2, 3.899]
+        XCTAssert(strClass1 =*= strClass2, "数组[Float]属性相等比较")
+    }
 }
 
 class SuperClassStr: EquatableProperty {
     var propertyStr: String = ""
     var propertyStrOpt: String?
     
-    var subClass: SubClass!
+    var propertyArr: [Bool]?
+    var propertyArrStr: [String]?
+    var propertyArrFloat: [Float] = [Float]()
+    
+    var subClass: SubClass?
 }
 
-class SubClass {
+class SubClass: EquatableProperty {
     var propertyInt: Int = 0
     var propertyIntOpt: Int?
 }
