@@ -47,5 +47,3 @@ let pe2 = People(name: "ha", empole: Empole(age: 14))
 
 print("pe1 == pe2 \(People.equalProperty(pe1, b: pe2))")
 
-
-
