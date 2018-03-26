@@ -32,7 +32,7 @@ class EquatablePropertyTests: XCTestCase {
         
         strClass1.propertyStrOpt = nil
         strClass2.propertyStrOpt = "test"
-        XCTAssert((strClass1 =*= strClass2), "String 类型测试2通过")
+        XCTAssert(!(strClass1 =*= strClass2), "String 类型测试2通过")
     }
     
     func testPerformanceExample() {
@@ -45,6 +45,6 @@ class EquatablePropertyTests: XCTestCase {
 }
 
 class SuperClassStr: EquatableProperty {
-    var propertyStr: String = ""
+//    var propertyStr: String = ""
     var propertyStrOpt: String?
 }

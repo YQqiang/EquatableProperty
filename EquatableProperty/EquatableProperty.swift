@@ -64,6 +64,12 @@ protocol EquatableAny {
 
 extension EquatableAny {
     static func equalAny<T: Equatable>(type: T.Type, a: Any, b: Any) -> Bool? {
+        if (a as? T) != nil && (b as? T) == nil {
+            return false
+        }
+        if (b as? T) != nil && (a as? T) == nil {
+            return false
+        }
         guard let a = a as? T, let b = b as? T else { return nil }
         return a == b
     }
