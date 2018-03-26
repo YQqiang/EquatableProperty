@@ -18,9 +18,9 @@ class Person: EquatableProperty {
         self.name = name
     }
     
-    static func ==(lhs: Person, rhs: Person) -> Bool {
-        return Person.equalProperty(lhs, b: rhs)
-    }
+//    static func ==(lhs: Person, rhs: Person) -> Bool {
+//        return Person.equalProperty(lhs, b: rhs)
+//    }
 }
 
 let p1 = Person("p1")
@@ -30,7 +30,7 @@ let p2 = Person("p1")
 p2.age = 12.3
 p2.books = ["a", "c"]
 
-print("p1 == p2 \(p1 == p2)")
+//print("p1 == p2 \(p1 == p2)")
 
 
 struct People: EquatableProperty {
@@ -43,7 +43,12 @@ struct Empole: EquatableProperty {
 }
 
 let pe1 = People(name: "ha", empole: Empole(age: 13))
-let pe2 = People(name: "ha", empole: Empole(age: 14))
+let pe2 = People(name: "ha", empole: Empole(age: 13))
 
-print("pe1 == pe2 \(People.equalProperty(pe1, b: pe2))")
+//print("pe1 == pe2 \(People.equalProperty(pe1, b: pe2))")
 
+let t1: EquatableProperty = Empole(age: 12)
+let t2: EquatableProperty = Person("123")
+print("t1 == t2 \(pe1 =*= pe1))")
+
+print("t1 == t2 \(pe1 =*= pe2)")

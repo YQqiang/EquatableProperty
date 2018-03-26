@@ -8,12 +8,26 @@
 
 import Foundation
 
+infix operator =*=: EqualProperty
+precedencegroup EqualProperty {
+    associativity: left
+    higherThan: MultiplicationPrecedence
+}
+
 protocol EquatableProperty: EquatableAny {
-    static func equalProperty<T>(_ a: T, b: T) -> Bool
 }
 
 extension EquatableProperty {
-    static func equalProperty<T>(_ a: T, b: T) -> Bool {
+    static func =*=<T: EquatableProperty>(_ a: T, b: Self) -> Bool {
+        guard type(of: a) == type(of: b) else {
+            return false
+        }
+        return equalProperty(a, b: b as! T)
+    }
+}
+
+extension EquatableProperty {
+    private static func equalProperty<T>(_ a: T, b: T) -> Bool {
         let aMirro = Mirror(reflecting: a)
         let bMirro = Mirror(reflecting: b)
         var result = true
