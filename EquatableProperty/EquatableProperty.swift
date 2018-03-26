@@ -40,6 +40,7 @@ extension EquatableProperty {
                             result = equalProperty(aValue, b: bValue)
                         }
                     }
+                    result = result && equalProperty(aValue, b: bValue)
                     if let res = equalSet(aValue: aValue, bValue: bValue) {
                         result = result && res
                     }
